@@ -64,7 +64,7 @@ def produtos_menos_lucrativos(sdf):
     fig = px.bar(new_df,
                  x="PRODUTO",
                  y="LUCRO",
-                 title="Os 20 produtos mais vendidos (Quantidade)", 
+                 title="Os 20 produtos menos lucrativos", 
                  labels={"LUCRO": "Lucro Bruto",  "PRODUTO":"Produto"},
                  color="LUCRO")
     st.plotly_chart(fig, use_container_width=True)
