@@ -4,7 +4,7 @@ import streamlit as st
 
 dataframe = pd.read_excel("database.xlsx")
 
-st.write("Esta análise de dados foi conduzida com base no dataframe extraído do sistema Exatto, referentes à loja ARAM, abrangendo o período de 01 de Janeiro de 2023 a 01 de Abril de 2024.")
+
 
 def faturamento_por_grupo(sdf):
     # Gráfico de barras para o faturamento total por grupo
@@ -120,4 +120,5 @@ def main():
     # Adicionar aqui a lógica para a análise de clientes se necessário
 
 if __name__ == '__main__':
+    st.write("Esta análise de dados foi conduzida com base no dataframe extraído do sistema Exatto, referentes à loja ARAM, abrangendo o período de 01 de Janeiro de 2023 a 01 de Abril de 2024.")
     main()
